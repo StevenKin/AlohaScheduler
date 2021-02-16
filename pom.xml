@@ -7,6 +7,11 @@
     <groupId>com.github.stevenkin</groupId>
     <artifactId>AlohaScheduler</artifactId>
     <version>0.0.1</version>
+    <modules>
+        <module>alohaschdeuler-common</module>
+        <module>alohascheduler-client</module>
+        <module>alohascheduler-server</module>
+    </modules>
     <packaging>pom</packaging>
     <name>AlohaScheduler</name>
     <description>Distributed scheduling and execution framework</description>
