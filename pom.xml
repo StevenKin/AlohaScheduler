@@ -11,6 +11,8 @@
         <module>alohaschdeuler-common</module>
         <module>alohascheduler-client</module>
         <module>alohascheduler-server</module>
+        <module>alohascheduler-client-example</module>
+        <module>alohascheduler-admin</module>
     </modules>
     <packaging>pom</packaging>
     <name>AlohaScheduler</name>
