@@ -36,6 +36,13 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-json</artifactId>
+            <version>${springboot.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
         <!-- Junit 测试 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

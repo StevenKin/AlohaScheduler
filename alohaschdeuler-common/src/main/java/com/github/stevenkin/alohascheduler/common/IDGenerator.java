@@ -1,5 +1,5 @@
 package com.github.stevenkin.alohascheduler.common;
 
-public interface IDGenerator {
+public interface IDGenerator extends Lifecycle {
     Long get();
 }

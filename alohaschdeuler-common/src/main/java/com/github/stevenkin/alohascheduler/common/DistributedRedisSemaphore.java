@@ -3,6 +3,7 @@ package com.github.stevenkin.alohascheduler.common;
 import org.springframework.data.redis.core.RedisTemplate;
 
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class DistributedRedisSemaphore implements DistributedSemaphore{
     private String id;
@@ -52,7 +53,7 @@ public class DistributedRedisSemaphore implements DistributedSemaphore{
 
     @Override
     public void init(Map<String, Object> params) {
-        redisTemplate.opsForValue().setIfAbsent(counterKey, "0");
+        redisTemplate.opsForValue().setIfAbsent(counterKey, 0, -1, TimeUnit.SECONDS);
     }
 
     @Override
